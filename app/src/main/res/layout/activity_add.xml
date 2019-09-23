@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <TextView
+        android:id="@+id/tvnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude" />
+
+    <EditText
+        android:id="@+id/edLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tvlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        />
+
+    <EditText
+        android:id="@+id/edLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btOnClickPegarLoc"
+        android:text="Pegar Localização" />
+
+    <TextView
+        android:id="@+id/tvObs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observações"
+        />
+
+    <EditText
+        android:id="@+id/edObs"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:gravity="top"
+        android:maxLines="5"
+        android:minLines="0" />
+
+    <TextView
+        android:id="@+id/tvim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagens"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btOnClickSalvarLoc"
+        android:text="Salvar" />
+
+
+</LinearLayout>
